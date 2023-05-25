@@ -8,7 +8,7 @@ intents.presences = False
 
 bot = commands.Bot(command_prefix='!', intents=intents)
 
-openai.api_key = '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'
+openai.api_key = 'sk-#################################'
 
 @bot.event
 async def on_ready():
@@ -61,7 +61,7 @@ async def past(ctx, years: int):
     past_text = response.choices[0].text.strip()
 
    
-    image_prompt = f"Streets capital city of popular and dominating empire in {abs_years} {era},digital art"  
+    image_prompt = f"Streets of capital city of popular and dominating empire in {abs_years} {era},digital art"  
     image_response = openai.Image.create(
         prompt=image_prompt,
         n=1,
@@ -74,4 +74,4 @@ async def past(ctx, years: int):
     await ctx.send(past_text)
     await ctx.send(image_url)
 
-bot.run('MTEwOTI2NDg3NTU0NjQ4NDgwNg.G57lrN.40CGIqwlT2JTErEVU-3Uqr2Dfzri95yWxI-7R0')
+bot.run('#################################################')
